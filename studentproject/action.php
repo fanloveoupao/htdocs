@@ -41,6 +41,10 @@ class Action
     public static function querry()
     {
         if (self::$sql_pdo == null) {
+
+
+
+
             self::connect();
         } else {
             $sql = "select * from ys_stu";
