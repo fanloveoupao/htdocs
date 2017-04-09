@@ -59,7 +59,7 @@ class Action
             $arr = array(null, $class_id, $name, $sex, $age);
             $stmt->execute($arr);
             self::$sql_pdo->commit();
-
+            echo "<script>alert('添加成功');window.location='index.php'</script>>";
         } catch (PDOException $exception) {
             $str = $exception->getMessage();
             echo '<script>alert("插入失败")</script>>';
