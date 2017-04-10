@@ -3,6 +3,16 @@ require_once 'action.php'
 ?>
 <html>
 <head><title>学生管理系统</title></head>
+<script>
+    function doDel(id) {
+        if (confirm("确定删除吗")) {
+            window.location = 'action.php?action=del&id=' + id;
+        }
+    }
+    function doUpdate(id) {
+        window.location = 'edit.php?id=' + id;
+    }
+</script>
 <body>
 <center>
     <!--包含菜单-->
@@ -32,7 +42,10 @@ require_once 'action.php'
             echo "<td>{$row['sex']}</td>";
             echo "<td>{$row['class_id']}</td>";
             echo "<td>{$row['age']}</td>";
-            echo "<td>操作</td>";
+            echo "<td>
+    <a href='javascript:doDel({$row['id']})'>删除</a>
+     <a href='edit.php?id={$row['id']}'>修改</a>
+</td>";
             echo "</tr>";
         }
         ?>
