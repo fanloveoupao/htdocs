@@ -115,6 +115,7 @@ class Action
             self::connect();
         }
         try {
+            //字符串类型的要用单引号''id='{$name}'引着,其它类型的不要直接用就行id=$id;
             $sql = "update ys_stu set name=class_id='{$class_id}',name='{$name}',sex='{$sex}',age={$age} WHERE id={$id}";
             $stmt = self::$sql_pdo->prepare($sql);
             $stmt->execute();

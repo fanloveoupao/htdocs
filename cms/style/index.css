@@ -1,0 +1,721 @@
+@charset "utf-8";
+body, h1, h2, h3, p, form, ul, li, dl, dt, dd {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 10px;
+    color: #360;
+    background: url(../images/lbg.png);
+    letter-spacing: 1px;
+}
+
+.top {
+    margin-top: 20px;
+    height: 26px;
+    background: honeydew;
+    font-size: 12px;
+    color: blue;
+    text-align: right;
+}
+
+.top a {
+    height: 26px;
+    line-height: 26px;
+}
+
+.top a:hover {
+    color: red;
+}
+
+.head {
+    height: 80px;
+    margin-top: 10px;
+}
+
+.head h1 {
+    width: 250px;
+    height: 80px;
+    font-size: 18px;
+    text-align: center;
+    background: url("../images/logo.png");
+    float: left;
+}
+
+.head h1 a {
+    height: 80px;
+    display: block;
+    text-indent: -999px;
+}
+
+.img {
+    width: 250px;
+    height: 80px;
+}
+
+.head div.adver {
+    float: right;
+    width: 690px;
+    height: 80px;
+    border: 1px solid #cccccc;
+}
+
+.head div.adver img {
+    display: block;
+    width: 690px;
+    height: 80px;
+}
+
+.nav {
+    height: 35px;
+    background: #fff;
+    margin-top: 10px;
+    border: 1px solid #cccccc;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-ul {
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+}
+
+.nav-ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.nav-ul li a {
+    color: #369;
+    text-decoration: none;
+}
+
+.nav-ul li a:hover {
+    color: #f60;
+}
+
+.search {
+    height: 25px;
+    margin: 0 0 10px 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 5px 0 0 5px;
+    font-size: 14px;
+}
+
+.search form {
+    float: left;
+}
+
+.search form select {
+    background: #fff;
+}
+
+.search form input.text {
+    width: 200px;
+    height: 16px;
+    background: #fff;
+}
+
+.search form input.submit {
+    width: 45px;
+    height: 22px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.strong {
+    float: left;
+    padding: 0 0 0 15px;
+}
+
+.tag-ul {
+    display: inline;
+    margin-left: 15px;
+    float: left;
+    padding: 0px 0 0 0;
+}
+
+.tag-ul li {
+    float: left;
+    padding: 0 8px 0 0;
+}
+
+.tag-ul li a {
+    display: inline;
+    color: green;
+    text-decoration: none;
+}
+
+.tag-ul li a:hover {
+    color: #f60;
+}
+
+.user {
+    width: 268px;
+    height: 398px;
+    float: right;
+    margin: 0 0 10px 0;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.user form {
+    position: relative;
+    top: 2px;
+}
+
+.user form label {
+    display: block;
+    padding: 6px 0 4px 12px;
+}
+
+.user form label input.text {
+    width: 180px;
+    height: 20px;
+    border: 1px solid #666;
+    background: #eee;
+}
+
+.user form label input.code {
+    width: 100px;
+}
+
+.user form label.yzm {
+    position: relative;
+    top: -14px;
+}
+
+.user form img {
+    width: 78px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+.user form p {
+    padding: 5px 0;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+
+.user form p input.submit {
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    font-sizez: 12px;
+}
+
+.user form p a {
+    color: green;
+    text-decoration: none;
+}
+
+.user form p a:hover {
+    text-decoration: underline;
+}
+
+.user h3 {
+    font-size: 12px;
+    padding: 8px 10px;
+    clear: both;
+}
+
+.user h3 span {
+    color: #ccc;
+}
+
+.user dl {
+    width: 72px;
+    float: left;
+    padding: 0 0 0 12px;
+}
+
+.user dl dt img {
+    display: block;
+}
+
+.user dl dd {
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.news {
+    width: 378px;
+    height: 398px;
+    border: 1px solid #ccc;
+    float: right;
+    margin: 0 10px 10px 0;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.news h3 {
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+.news h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.news h3 a:hover {
+    text-decoration: underline;
+}
+
+.news p {
+    line-height: 140%;
+}
+
+.news p a {
+    color: #333;
+    text-decoration: none;
+}
+
+.news p a:hover {
+    text-decoration: underline;
+}
+
+.news p.link {
+    color: green;
+    padding: 4px 0;
+    border-bottom: 1px dashed #999;
+}
+
+.news p.link a {
+    color: green;
+    display: inline-block;
+    padding: 0 0 5px 0;
+}
+
+/*上左下右*/
+.news ul {
+    padding: 5px 2px 0 2px;
+}
+
+.news ul li {
+    height: 24px;
+    line-height: 24px;
+    background: url(../images/pointer.png) no-repeat left center;
+    padding: 0 0 0 10px;
+}
+
+.news ul li em {
+    float: right;
+    font-style: normal;
+    font-family: Tahoma;
+}
+
+.news ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.news ul li a:hover {
+    text-decoration: underline;
+}
+
+.pic {
+    width: 270px;
+    height: 195px;
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+.pic embed {
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.rec {
+    width: 268px;
+    height: 193px;
+    float: left;
+    margin: 0 0 10px 0;
+    border: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.rec ul {
+    padding: 2px 10px 0 10px;
+}
+
+.rec ul li em {
+    float: right;
+    font-style: normal;
+    font-family: Tahoma;
+}
+
+.rec ul li {
+    height: 23px;
+    line-height: 23px;
+    background: url(../images/pointer.png) no-repeat left center;
+    padding: 0 0 0 10px;
+}
+
+.rec ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+rec ul li a:hover {
+
+    text-decoration: underline;
+}
+
+.sidebar-right {
+    width: 270px;
+    height: 835px;
+    float: right;
+    margin: 0 0 10px 0;
+}
+
+.sidebar-right div.adver {
+    width: 270px;
+    height: 200px;
+    margin: 0 0 10px 0;
+}
+
+.sidebar-right div.adver img {
+    display: block;
+}
+
+.sidebar-right div.hot {
+    padding: 5px 0 5px 0;
+    border: 1px solid #ccc;
+}
+
+.sidebar-right div.hot ul {
+    font-size: 12px;
+    padding: 2px 10px 0 10px;
+}
+
+.sidebar-right div.hot ul li em {
+    float: right;
+    font-style: normal;
+    font-family: Tahoma;
+}
+
+.sidebar-right div.hot ul li {
+    height: 23px;
+    line-height: 23px;
+    background: url(../images/pointer.png) no-repeat left center;
+    padding: 0 0 0 10px;
+}
+
+.sidebar-right div.hot ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.sidebar-right div.hot ul a:hover {
+
+    text-decoration: underline;
+}
+
+.sidebar-right div.comm {
+    margin-top: 10px;
+    padding: 5px 0 5px 0;
+    border: 1px solid #ccc;
+}
+
+.sidebar-right div.comm ul {
+    font-size: 12px;
+    padding: 2px 10px 0 10px;
+}
+
+.sidebar-right div.comm ul li {
+    height: 23px;
+    line-height: 23px;
+    background: url(../images/pointer.png) no-repeat left center;
+    padding: 0 0 0 10px;
+}
+
+.sidebar-right div.comm ul li em {
+    float: right;
+    font-style: normal;
+    font-family: Tahoma;
+}
+
+.sidebar-right div.comm ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.sidebar-right div.comm ul a:hover {
+
+    text-decoration: underline;
+}
+
+.sidebar-right div.vote {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.sidebar-right div.vote h3 {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #369;
+    border-bottom: 1px dashed #ccc;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.sidebar-right div.vote form label {
+    display: block;
+    padding: 2px 0 2px 20px;
+}
+
+.sidebar-right div.vote form p {
+    text-align: center;
+    padding: 5px;
+}
+
+.sidebar-right div.vote form p input {
+    width: 45px;
+    height: 20px;
+    margin: 0 3px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.picnews {
+    width: 678px;
+    height: 198px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+}
+
+.picnews dl {
+    width: 156px;
+    float: left;
+    padding: 10px 0 0 11px;
+}
+
+.picnews dl dt {
+    border: 1px solid #999;
+    padding: 2px;
+}
+
+.picnews dl dt img {
+    border: none;
+    display: block;
+}
+
+.picnews dl dd {
+    padding: 5px;
+    text-align: center;
+}
+
+.picnews dl dd a {
+    color: #666;
+    text-decoration: none;
+}
+
+.picnews dl dd a:hover {
+    text-decoration: underline;
+}
+
+.newslist {
+    width: 680px;
+    height: 625px;
+    float: left;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+}
+
+.newslist ul {
+    padding: 8px 10px 0 10px;
+}
+
+.newslist div.list {
+    width: 49%;
+    height: 306px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+.newslist div.list h2 a {
+    float: right;
+    padding: 0 10px 0 0;
+}
+
+.newslist div.list h2 a {
+    color: green;
+    text-decoration: none;
+}
+
+.newslist div.list h2 a:hover {
+    text-decoration: underline;
+}
+
+.newslist div.right {
+    float: right;
+}
+
+.newslist div.bottom {
+    margin: 0 0 10px 0;
+}
+
+.newslist ul li {
+    height: 24px;
+    line-height: 24px;
+    background: url(../images/arrow.png) no-repeat left center;
+    padding: 0 0 0 10px;
+}
+
+.newslist ul li em {
+    float: right;
+    font-style: normal;
+    font-family: Tahoma;
+}
+
+.newslist ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.newslist ul li a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    width: 958px;
+    height: 108px;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+.link span {
+    float: right;
+    font-weight: normal;
+    padding: 0 10px 0 0;
+}
+
+.link span a {
+    color: #360;
+    text-decoration: none;
+}
+
+.link span a:hover {
+    color: #f60;
+}
+
+.link ul {
+    padding: 0 0 0 10px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #999;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.link ul li {
+    display: inline;
+    padding: 5px 5px 0 5px;
+}
+
+.link ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.link ul li a:hover {
+    text-decoration: underline;
+}
+
+.link dl {
+    padding: 10px 0 0 8px;
+}
+
+.link dl dd {
+    padding: 0 8px;
+    float: left;
+}
+
+.link dl dd img {
+    border: none;
+    display: block;
+}
+
+.footer {
+    width: 960px;
+    height: 40px;
+    float: left;
+    font-size: 12px;
+}
+
+.footer p {
+    text-align: center;
+    line-height: 150%;
+    font-family: Tahoma;
+    color: #333;
+}
+
+.footer p span {
+    color: #06f;
+}
+
+.page {
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
+
+.page a {
+    border: 1px solid #666;
+    padding: 2px 5px;
+    margin: 0 2px;
+    color: #3b6ea5;
+    text-decoration: none;
+}
+
+.page a:hover, .page span.me {
+    color: #fff;
+    border: 1px solid #000;
+    background: #000;
+    text-decoration: none;
+}
+
+.page span.disabled {
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    margin: 0 2px;
+    color: #ccc;
+}
+
+.page span.me {
+    padding: 2px 5px;
+    margin: 0 2px;
+}
+
