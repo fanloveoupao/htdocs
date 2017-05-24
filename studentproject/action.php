@@ -61,6 +61,9 @@ class Action
 
     public static function insert($name, $sex, $class_id, $age)
     {
+        if (self::$sql_pdo == null) {
+            self::connect();
+        }
         try {
             $sql = "insert into ys_stu VALUE (?,?,?,?,?)";
             $stmt = self::$sql_pdo->prepare($sql);
@@ -109,6 +112,21 @@ class Action
         }
     }
 
+    public static function querryByAccount($name)
+    {
+        if (self::$sql_pdo == null) {
+            self::connect();
+        }
+        $sql = "select * from ys_stu WHERE NAME ={$name}";
+        $stmt = self::$sql_pdo->query($sql);
+        $arr = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (empty($arr)) {
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+
     public static function update($id, $name, $sex, $class_id, $age)
     {
         if (self::$sql_pdo == null) {
@@ -125,6 +143,12 @@ class Action
             die("更新失败" . $exception->getMessage());
             self::$sql_pdo->rollBack();
         }
+    }
+
+    public static function JsonUtil($array)
+    {
+        $json = json_encode($array, JSON_UNESCAPED_UNICODE);
+        return $json;
     }
 }
 
