@@ -14,6 +14,7 @@ class ActionUtil
     {
         if (self::$sql_pdo == null) {
             try {
+                // self::$sql_pdo = new PDO("mysql:host=118.89.28.170;dbname=gsproject", 'fgk', 'fangaokui');
                 self::$sql_pdo = new PDO("mysql:host=localhost;dbname=gsproject", 'root', '');
                 self::$sql_pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 self::$sql_pdo->query("set names utf8");
@@ -36,11 +37,9 @@ class ActionUtil
             $arr = array(null, $phone, $account, $username, $password, $major);
             $stmt->execute($arr);
             self::$sql_pdo->commit();
-            return $arr;
         } catch (PDOException $exception) {
             $str = $exception->getMessage();
-            die("插入失败.$str");
-            return null;
+           echo "插入失败.$str";
             self::$sql_pdo->rollBack();
         }
     }

@@ -16,8 +16,8 @@ if (isset($_GET['phone'])
     $username = $_GET['username'];
     $password = $_GET['password'];
     $major = $_GET['major'];
-    $arr = ActionUtil::insertUser($phone, $account, $username, $password, $major);
-    echo ActionUtil::JsonUtil($arr, "0x00000000", "注册成功");
+    ActionUtil::insertUser($phone, $account, $username, $password, $major);
+    echo ActionUtil::JsonUtil(null, "0x00000000", "注册成功");
 } else {
     echo ActionUtil::JsonUtil(null, "0x00000000", "注册失败");
 }
